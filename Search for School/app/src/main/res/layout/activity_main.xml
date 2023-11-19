@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageButton
+        android:id="@+id/Admin"
+        android:layout_width="111dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="176dp"
+        android:background="@drawable/circlepng"
+        android:scaleType="fitStart"
+        android:src="@drawable/professor_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toEndOf="@+id/User"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/User"
+        android:layout_width="110dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="176dp"
+        android:background="@drawable/circlepng"
+        android:scaleType="fitCenter"
+        android:src="@drawable/student_icon_removebg_preview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="12dp"
+        android:text="USER"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/User"
+        app:layout_constraintTop_toBottomOf="@+id/User" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="8dp"
+        android:text="ADMIN"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/Admin"
+        app:layout_constraintTop_toBottomOf="@+id/Admin" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
